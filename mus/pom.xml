@@ -11,7 +11,11 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-<junit.version>5.10.0</junit.version>  </properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <junit.version>5.10.0</junit.version>
+  </properties>
+
 
   <dependencies>
     <dependency>
@@ -36,7 +40,13 @@
       <artifactId>junit-jupiter-engine</artifactId>
       <version>${junit.version}</version>
       <scope>test</scope>
-    </dependency>  </dependencies>
+    </dependency>
+      <dependency>
+          <groupId>org.example</groupId>
+          <artifactId>mus</artifactId>
+          <version>1.0-SNAPSHOT</version>
+      </dependency>
+  </dependencies>
 
   <build>
     <plugins>
